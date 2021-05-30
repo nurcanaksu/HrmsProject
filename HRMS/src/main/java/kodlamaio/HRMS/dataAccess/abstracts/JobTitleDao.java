@@ -2,9 +2,9 @@ package kodlamaio.HRMS.dataAccess.abstracts;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import kodlamaio.HRMS.entities.concretes.JobTitle;
+import kodlamaio.HRMS.entities.concretes.JobPosition;
 
-public interface JobTitleDao extends JpaRepository<JobTitle, Integer> {
+public interface JobTitleDao extends JpaRepository<JobPosition, Integer> {
 
-	//Primary key integer oldugu  icin Integer yazdım
+	JobPosition findByTitleName(String titleName);
 }
