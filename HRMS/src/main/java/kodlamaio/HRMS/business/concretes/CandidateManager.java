@@ -119,4 +119,5 @@ public class CandidateManager implements CandidateService {
 		return matcher.matches();
 	}
 
+
 }

@@ -2,43 +2,47 @@ package kodlamaio.HRMS.entities.concretes;
 
 import java.time.LocalDate;
 
-import javax.persistence.*;
-
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.Inheritance;
 import javax.persistence.Table;
-
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 @Data
 @Entity
-@Table(name="users")
+@Table(name="verification_codes")
 @AllArgsConstructor
 @NoArgsConstructor
-@Inheritance(strategy=InheritanceType.JOINED)  // miras verdiği sınıfa ozelliklerini aktarır
-@JsonIgnoreProperties({"hibernateLazyInitializer", "handler", "products"})
-public class User {
-
+@EqualsAndHashCode
+public class VerificationCode {
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name="id")
 	private int id;
-	
-	@Column(name="email_address")
-	private String email;
-	
-	@Column(name="password")
-	private String password;
 
-	@Column(name="is_active")
-	private boolean isActive;
+	@Column(name="user_id")
+	private int userId;
+	
+	@Column(name="verification_code")
+	private String verificationCode;
 
 	@Column(name="created_date")
 	private LocalDate createdDate;
+
+	@Column(name="expired_date")
+	private LocalDate expiredDate;
+
+
+	@Column(name="verification_date")
+	private LocalDate verificationDate;
+
+	@Column(name="is_verified")
+	private boolean isVerified;
 }

@@ -9,3 +9,4 @@ public interface AuthService {
 	Result registerForCandidate(Candidate candidate, String passwordRepeat);
 	Result registerForEmployer(Employer employer, String passwordRepeat);
 }
+

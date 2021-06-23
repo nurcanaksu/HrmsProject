@@ -1,7 +1,8 @@
 package kodlamaio.HRMS.core.utilities.adapters.verification.mernis;
 
-import java.time.LocalDate;
 
+
+import java.time.LocalDate;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -12,5 +13,5 @@ public class MernisFakeServiceAdapters implements MernisCandidateCheckService {
 
 		return true;
 	}
-
 }
+ 
