@@ -43,3 +43,25 @@ Req 4 : İş verenler listelendi. (Sadece tüm liste)
 Req 5 : İş arayanlar listelendi. (Sadece tüm liste)
 
 Req 6 : İş pozisyonları listelendi. (Sadece tüm liste)
+
+
+Req 7 : İş verenler sisteme iş ilanı ekleyebilir.
+
+İş ilanı formunda;
+İş tanımı girişi yapılabiliyor. (Örneğin; firmamız için JAVA, C# vb. dillere hakim....)
+Maaş skalası için min-max girişi yapılabiliyor. (Opsiyonel)
+Açık pozisyon adedi girişi yapılabiliyor. (Zorunlu)
+Son başvuru tarihi girişi yapılabiliyorr.
+Req 8 : Sistemdeki tüm aktif iş ilanları listelenebiliyor.
+
+Liste, tablo formunda geliyor.
+Listede firmadı, genel iş pozisyonu adı, açık pozisyon adedi, yayın tarihi, son başvuru tarihi bilgileri bulunuyor.
+Req 9 : Sistemdeki tüm aktif iş ilanları tarihe göre listelenebiliyor.
+
+Liste, tablo formunda .
+Listede firmadı, genel iş pozisyonu adı, açık pozisyon adedi, yayın tarihi, son başvuru tarihi bilgileri yer alıyor.
+Req 10 : Sistemde bir firmaya ait tüm aktif iş ilanları listelenebiliyor.
+
+Liste, tablo formunda .
+Listede firmadı, genel iş pozisyonu adı, açık pozisyon adedi, yayın tarihi, son başvuru tarihi bilgileri yer alıyor.
+Req 11 : İş verenler sistemdeki bir ilanı kapatabiliyor. (Pasif ilan)
