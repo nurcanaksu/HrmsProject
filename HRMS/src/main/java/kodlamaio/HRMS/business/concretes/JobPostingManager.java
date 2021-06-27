@@ -55,11 +55,6 @@ public class JobPostingManager implements JobPostingService {
 		return new SuccesDataResult<List<JobPosting>>(this.jobPostingDao.getAllByCreationDateAsc());
 	}
     
-	/*@Override
-	public DataResult<List<JobPosting>> getAllActiveJobPostingByCompanyName(String companyName) {
-		return new SuccesDataResult<List<JobPosting>>(
-				this.jobPostingDao.getAllActiveJobAdvertByEmployer_CompanyName(companyName));
-	}*/
 
 	@Override
 	public Result closeJobPosting(int id) {

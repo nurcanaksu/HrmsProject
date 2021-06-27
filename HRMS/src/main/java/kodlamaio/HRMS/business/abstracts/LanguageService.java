@@ -1,0 +1,21 @@
+package kodlamaio.HRMS.business.abstracts;
+
+import java.util.List;
+
+import kodlamaio.HRMS.core.utilities.results.DataResult;
+import kodlamaio.HRMS.core.utilities.results.Result;
+import kodlamaio.HRMS.entities.concretes.Language;
+
+public interface LanguageService {
+
+	DataResult<List<Language>> getAll();
+
+	DataResult<Language> getById(int id);
+
+	Result add(Language language);
+
+	Result update(Language language);
+
+	Result delete(Language language);
+
+}
